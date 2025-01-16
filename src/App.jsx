@@ -11,11 +11,9 @@ function App() {
       </header>
       <main>
         <Routes>
-          {/* Rotas principais */}
           <Route path="/" element={<Home />} />
           <Route path="/about/*" element={<About />} />
 
-          {/* Sub-rotas diretamente declaradas */}
           <Route path="/home/section1" element={<Section1 />} />
           <Route path="/home/section2" element={<Section2 />} />
         </Routes>
@@ -48,7 +46,6 @@ function About() {
         <Link to="/about/team">Equipe</Link>
       </nav>
       <Routes>
-        {/* Sub-rotas de About */}
         <Route path="history" element={<History />} />
         <Route path="team" element={<Team />} />
       </Routes>
