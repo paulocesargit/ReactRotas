@@ -4,29 +4,19 @@ Este projeto é uma aplicação React criada para demonstrar o uso básico do Re
 
 ## Funcionalidades
 
-1. **Rotas Principais**:
+**Rotas Principais**:
 
-   - **Página Inicial** ("/"): Exibe um título e uma descrição introdutória da aplicação.
-   - **Página Sobre** ("/about"): Apresenta informações sobre a aplicação e links para sub-rotas.
+- **Página Inicial** ("/"): Exibe um título e uma descrição introdutória da aplicação.
+- **Página Sobre** ("/about"): Apresenta informações sobre a aplicação e links para sub-rotas.
 
-2. **Sub-rotas**:
+**Sub-rotas**:
 
-   - Na **Página Inicial**:
-     - **Seção 1** ("/home/section1"): Detalha os principais recursos da aplicação.
-     - **Seção 2** ("/home/section2"): Apresenta exemplos práticos de uso das funcionalidades.
-   - Na **Página Sobre**:
-     - **História** ("/about/history"): Conta a história da aplicação.
-     - **Equipe** ("/about/team"): Apresenta a equipe responsável pelo desenvolvimento.
-
-3. **Estilo Consistente**:
-   - Um layout uniforme com cabeçalho, rodapé e conteúdo centralizado em todas as rotas.
-   - Estilos definidos no arquivo `App.css`.
-
-## Tecnologias Utilizadas
-
-- **React**: Biblioteca JavaScript para criação de interfaces de usuário.
-- **React Router Dom**: Biblioteca para gerenciamento de rotas em aplicações React.
-- **Vite**: Ferramenta de desenvolvimento rápida para criação de projetos front-end.
+- Na **Página Inicial**:
+  - **Seção 1** ("/home/section1"): Detalha os principais recursos da aplicação.
+  - **Seção 2** ("/home/section2"): Apresenta exemplos práticos de uso das funcionalidades.
+- Na **Página Sobre**:
+  - **História** ("/about/history"): Conta a história da aplicação.
+  - **Equipe** ("/about/team"): Apresenta a equipe responsável pelo desenvolvimento.
 
 ## Componentes Criados
 
