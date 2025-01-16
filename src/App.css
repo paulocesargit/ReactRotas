@@ -93,3 +93,32 @@ button {
 button:hover {
   background-color: #45a049;
 }
+
+.news {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 20px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.news h2 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.news p {
+  margin: 10px 0;
+  line-height: 1.4;
+}
+
+.news a {
+  color: #4caf50;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.news a:hover {
+  text-decoration: underline;
+}

@@ -1,4 +1,10 @@
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  Link,
+  useNavigate,
+} from "react-router-dom";
 import "./App.css";
 
 function App() {
@@ -6,7 +12,8 @@ function App() {
     <BrowserRouter>
       <header>
         <nav>
-          <Link to="/">Página Inicial</Link> | <Link to="/about">Sobre</Link>
+          <Link to="/">Página Inicial</Link> | <Link to="/about">Sobre</Link> |{" "}
+          <Link to="/news">Notícias</Link>
         </nav>
       </header>
       <main>
@@ -16,6 +23,7 @@ function App() {
 
           <Route path="/home/section1" element={<Section1 />} />
           <Route path="/home/section2" element={<Section2 />} />
+          <Route path="/news/*" element={<News />} />
         </Routes>
       </main>
       <footer>© 2025 Minha Aplicação React</footer>
@@ -97,6 +105,45 @@ function Team() {
         Temos uma equipe apaixonada e diversificada, formada por profissionais
         que amam tecnologia e inovação.
       </p>
+    </div>
+  );
+}
+
+function News() {
+  const navigate = useNavigate();
+
+  return (
+    <div className="page">
+      <h1>Notícias</h1>
+      <p>Acompanhe as últimas novidades.</p>
+      <nav>
+        <Link to="featured">Destaques</Link>
+      </nav>
+      <button onClick={() => navigate("latest")}>
+        Ir para Notícias Recentes
+      </button>
+      <Routes>
+        <Route path="latest" element={<LatestNews />} />
+        <Route path="featured" element={<FeaturedNews />} />
+      </Routes>
+    </div>
+  );
+}
+
+function LatestNews() {
+  return (
+    <div>
+      <h2>Notícias Recentes</h2>
+      <p>Aqui estão as notícias mais recentes sobre tecnologia e inovação.</p>
+    </div>
+  );
+}
+
+function FeaturedNews() {
+  return (
+    <div>
+      <h2>Destaques</h2>
+      <p>Confira as notícias mais destacadas da semana.</p>
     </div>
   );
 }

@@ -1,5 +1,7 @@
 # Atividade: Configuração de Rotas com React Router
 
+## Aula 22
+
 Este projeto é uma aplicação React criada para demonstrar o uso básico do React Router. Ele inclui a configuração de rotas principais e sub-rotas, juntamente com estilos consistentes para manter um layout uniforme em toda a aplicação.
 
 ## Funcionalidades
@@ -54,3 +56,15 @@ Este projeto é uma aplicação React criada para demonstrar o uso básico do Re
 <img alt="Imagem do site" src="./src/assets/history.png" width="100%">
 
 <img alt="Imagem do site" src="./src/assets/team.png" width="100%">
+
+## Aula 23
+
+- uma nova rota criada com o nome noticias
+
+<img alt="Imagem do site" src="./src/assets/noticias.png" width="100%">
+
+- rotas filhas da noticia
+
+<img alt="Imagem do site" src="./src/assets/Destaques.png" width="100%">
+
+<img alt="Imagem do site" src="./src/assets/noticiais recentes.png" width="100%">
